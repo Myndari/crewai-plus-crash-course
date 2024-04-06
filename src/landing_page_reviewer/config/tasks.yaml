@@ -1,0 +1,21 @@
+scraping_task:
+  description: >
+    Scrape the entire content of the folowing landing page: 
+
+    {landing_page_url}
+  expected_output: >
+    The full HTML content of the landing page, ready for analysis.
+
+analysis_task:
+  description: >
+    Review the scraped website content and perform a detailed analysis focusing on the following areas:
+
+    - Heading Usage: Evaluate if the headings (H1, H2, etc.) accurately describe the following content sections and contain relevant keywords.
+    - Content Readability: Analyze the text for readability scores (e.g., Flesch Reading Ease), the presence of large blocks of text, and the effective use of lists.
+    - CTA Placement and Wording: Identify the placement of Call-to-Action elements on the page and assess their visibility and wording.
+    - Image Use: Review how images are used, their relevance to the content, their loading speed, and if they have descriptive alt texts.
+    - Internal Linking Structure: Examine the use of internal links, their relevance, and if they contribute to a cohesive site structure.
+    - SEO Factors: Check meta tags, descriptions, and keywords for optimization.
+    - Mobile Responsiveness: Test how the landing page renders on different device sizes and identify any usability issues.
+  expected_output: >
+    A detailed report with specific observations and suggestions for each of the areas listed above. The report should highlight any issues found and provide actionable recommendations for improvements, tailored to the actual content and structure of the landing page.

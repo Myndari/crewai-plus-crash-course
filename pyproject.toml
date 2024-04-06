@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "landing_page_reviewer"
+version = "0.1.0"
+description = "landing_page_reviewer using crewAI"
+authors = ["bhancock_ai <brandon@brandonhancock.io>", "João Moura <joaomdmoura@mgail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.28.1"}
+
+[tool.poetry.scripts]
+landing_page_reviewer = "landing_page_reviewer.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
